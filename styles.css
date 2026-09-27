@@ -395,3 +395,172 @@ label {
     grid-template-columns: 1fr;
   }
 }
+
+/* 开盒核对 */
+.check-progress {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.check-progress strong {
+  color: var(--red);
+}
+
+.check-list {
+  display: grid;
+  gap: 10px;
+  margin: 0 0 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.check-row {
+  display: grid;
+  gap: 6px;
+  border-bottom: 1px solid #eef0f2;
+  padding-bottom: 10px;
+}
+
+.check-row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.check-line {
+  display: grid;
+  grid-template-columns: 1fr 74px auto;
+  gap: 8px;
+  align-items: center;
+}
+
+.check-line input {
+  padding: 7px 9px;
+}
+
+.check-name {
+  line-height: 1.35;
+}
+
+.check-name small {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.badge {
+  border-radius: 999px;
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.badge.ok {
+  background: rgba(57, 116, 91, 0.13);
+  color: var(--green);
+}
+
+.badge.short {
+  background: rgba(179, 72, 72, 0.13);
+  color: var(--red);
+}
+
+.badge.pending {
+  background: rgba(213, 162, 61, 0.18);
+  color: #8a6518;
+}
+
+.check-sub {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 6px;
+}
+
+.check-sub[hidden] {
+  display: none;
+}
+
+.check-sub input {
+  padding: 7px 9px;
+}
+
+.check-sub button {
+  padding: 7px 10px;
+  font-size: 12px;
+}
+
+.block-reason {
+  margin: 8px 0 0;
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.block-reason[hidden] {
+  display: none;
+}
+
+.started-note {
+  margin: 10px 0 0;
+  border-radius: 6px;
+  background: rgba(57, 116, 91, 0.1);
+  color: var(--green);
+  padding: 9px 10px;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+#startGameBtn,
+#resetCheckBtn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#resetCheckBtn {
+  margin-top: 6px;
+  padding: 7px 10px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.pill.check-ready {
+  background: rgba(57, 116, 91, 0.13);
+  color: var(--green);
+}
+
+.pill.check-short {
+  background: rgba(179, 72, 72, 0.13);
+  color: var(--red);
+}
+
+.pill.check-open {
+  background: rgba(49, 95, 134, 0.13);
+  color: var(--blue);
+}
+
+.pill.check-doing {
+  background: rgba(213, 162, 61, 0.18);
+  color: #8a6518;
+}
+
+.component-list em,
+.adjust-list em {
+  color: var(--muted);
+  font-size: 11px;
+  font-style: normal;
+}
+
+.component-list strong,
+.adjust-list strong {
+  font-size: 13px;
+}
